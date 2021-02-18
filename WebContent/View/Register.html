@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+  <form action="RegisterServlet">
+	<table>
+	<tr>
+		<td>Name</td>
+		<td>:</td>
+		<td><input type="text" name="na" required pattern="[A-Z]{1}[a-z]{5,7}" title="Name should contain only alphabets of 6 to 8 characters in that first letter Should be Uppercase "></td>
+	</tr>
+	<tr>
+		<td>EmailID</td>
+		<td>:</td>
+		<td><input type="text" name="em" required pattern="[a-z]{3,10}[@]{1}[a-z]{3,5}[.]{1}[a-z]{3}" title="Mail Id Should not match with criteria"></td>
+	</tr>
+	<tr>
+		<td>Phone</td>
+		<td>:</td>
+		<td><input type="number" name="ph" required pattern="[0-9]{10}" title="phone no should contain only numbers of 10 characters"></td>
+	</tr>
+	<tr>
+		<td>Password</td>
+		<td>:</td>
+		<td><input type="password" name="pw" required pattern="[A-Za-z0-9@#$&]{6,10}" title="Password againest the rules"></td>
+	</tr>
+	<tr>
+		<td>Confirm Password</td>
+		<td>:</td>
+		<td><input type="password" name="cpw" required pattern="[A-Za-z0-9@#$&]{6,10}" title="Password againest the rules"></td>
+	</tr>
+	<tr>
+		<td>Graduation type</td>
+		<td>:</td>
+		<td><input type="radio" name="gt" value="regular">Regular</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><input type="radio" name="gt" value="correspondence">Correspondence</td>
+	</tr>
+	<tr>
+		<td>Gender</td>
+		<td>:</td>
+		<td><input type="radio" name="gn" value="male">Male</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><input type="radio" name="gn" value="female">Female</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><input type="submit"></td>
+	</tr>
+	<tr>
+		<td>Already Register?</td>
+		<td></td>
+		<td><a href="Login.html">Login</a></td>
+	</tr>
+	</table>
+ </form>
+</body>
+</html>

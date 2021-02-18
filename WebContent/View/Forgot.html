@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Forgot page</title>
+</head>
+<body>
+ <form action="ForgotServlet">
+  <table>
+  <tr>
+	<td>Password</td>
+	<td>:</td>
+	<td><input type="password" name="pw" required pattern="[A-Za-z0-9@#$&]{6,10}" title="Password againest the rules"></td>
+  </tr>
+   <tr>
+	<td>Confirm Password</td>
+	<td>:</td>
+	<td><input type="password" name="cpw" required pattern="[A-Za-z0-9@#$&]{6,10}" title="Password againest the rules"></td>
+  </tr>
+  <tr>
+	<td></td>
+	<td></td>
+	<td><input type="submit" value="Reset"></td>
+  </tr>
+  </table>
+ </form>
+</body>
+</html>
